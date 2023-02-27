@@ -4,7 +4,7 @@ set -e # abort on any error
 hosts=$(curl --request GET \
         -s https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE_ID/web3/hostnames \
         -H 'Content-Type: application/json' \
-        -Header "Authorization: Bearer $CLOUDFLARE_TOKEN") 
+        -H "Authorization: Bearer $CLOUDFLARE_TOKEN") 
         
 hostId=$(jq -r ".result | map(select(.name == \"${RECORD_DOMAIN}\")) | .[0].id" <<< "${hosts}" )
 
