@@ -1,6 +1,6 @@
 # action.yml
-name: "Cloudflare DNSLink Update"
-description: "Update a Cloudflare DNSLink with a new IPFS Hash"
+name: "Cloudflare Web3 Hostname DNSLink Update"
+description: "Update a Cloudflare new Web3 service with a new IPFS Hash"
 branding:
   icon: "type"
   color: "blue"
